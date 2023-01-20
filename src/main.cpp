@@ -1,5 +1,6 @@
-#include <iostream>
 #include <SFML/Graphics.hpp>
+#include <iostream>
+#include "../include/main.h"
 
 int main()
 {
@@ -25,8 +26,7 @@ int main()
     window.draw(rectangle);
     window.display();
     rectangle.move(0.5, 0);
-    if (rectangle.getPosition().x == 1000)
-      std::cout << "You just hit 1000!\n";
+    check_for_thousand(rectangle);
   }
 
   return 0;
