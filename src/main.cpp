@@ -2,7 +2,7 @@
 
 int main()
 {
-  sf::RenderWindow window(sf::VideoMode(1000, 1000), "Rectangle");
+  sf::RenderWindow window(sf::VideoMode(1536, 1344), "Rectangle");
   sf::RectangleShape rectangle(sf::Vector2f(100, 500));
   rectangle.setFillColor(sf::Color::Green);
   rectangle.setPosition(50, 75);
