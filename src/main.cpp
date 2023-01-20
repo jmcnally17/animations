@@ -19,6 +19,7 @@ int main()
     window.clear();
     window.draw(rectangle);
     window.display();
+    rectangle.move(0.5, 0);
   }
 
   return 0;
