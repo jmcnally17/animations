@@ -34,4 +34,6 @@ In order to run this code, it needs to be compiled into a useable file for your 
 g++ src/*.cpp -I /opt/homebrew/Cellar/sfml/2.5.1_2/inlcude -o bin/graphics -L /opt/homebrew/Cellar/sfml/2.5.1_2/lib -lsfml-graphics -lsfml-window -lsfml-system
 ```
 
-As of writing, the current SFML version from Homebrew is 2.5.1. You can check which version you have by using `brew info sfml`. This will also show you the correct path for the `-I` and `-L` options used in the compile command. Enter `./bin/graphics` into your terminal as mentioned earlier and a window should pop up with the necessary shapes drawn.
+As of writing, the current SFML version from Homebrew is 2.5.1. You can check which version you have by using `brew info sfml`. This will also show you the correct path for the `-I` and `-L` options used in the compile command.
+
+Enter `./bin/graphics` into your terminal as mentioned earlier and a window should pop up with the necessary shapes drawn.
