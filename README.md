@@ -1,6 +1,6 @@
 # C++ Graphics
 
-This is a small project for learning how to draw shapes and make graphics animations in C++ using the SFML framework.
+This is a small project for learning how to draw shapes and make graphics animations in C++ using the [SFML](https://www.sfml-dev.org/) framework.
 
 The [bin](https://github.com/jmcnally17/graphics/tree/main/bin) folder contains the executable file [graphics](https://github.com/jmcnally17/graphics/blob/main/bin/graphics) which can simply be run in the your terminal using `./bin/graphics` while in the [main](https://github.com/jmcnally17/graphics) directory. If you want to compile the code yourself, then see the instructions below for macOS.
 
@@ -12,7 +12,7 @@ A couple of frameworks need to be set up first before compiling the code. So, if
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-into your terminal. Then, enter `brew install sfml` to install the graphics library. The Xcode command line tools contain the g++ command needed to create the executable file. These can be installed by simply entering
+into your terminal. Then, enter `brew install sfml` to install the graphics library. The Xcode command line tools contain the g++ compile command needed to create the executable file. These can be installed by simply entering
 
 ```
 xcode-select --install
