@@ -15,8 +15,6 @@ int main()
   circle.setFillColor(sf::Color::Red);
   circle.setPosition(50, 1100);
 
-  std::cout << rectangle.getPosition().x << ", " << rectangle.getPosition().y << "\n";
-
   while (window.isOpen())
   {
     sf::Event event;
@@ -28,28 +26,49 @@ int main()
       }
     }
 
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
-    {
-      circle.move(0.5, 0);
-    }
-    else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
-    {
-      circle.move(-0.5, 0);
-    }
-
-    window.clear();
-    window.draw(rectangle);
-    window.draw(circle);
-    window.display();
-    rectangle.move(0.5, 0);
-    check_for_thousand(rectangle);
+    draw_shapes(window, rectangle, circle);
+    check_for_five_hundred(rectangle);
+    move_rectangle(rectangle);
+    move_circle(circle);
   }
 
   return 0;
 }
 
-void check_for_thousand(sf::RectangleShape rectangle)
+void draw_shapes(sf::RenderWindow &window, sf::RectangleShape rectangle, sf::CircleShape circle)
 {
-  if (rectangle.getPosition().x == 1000)
+  window.clear();
+  window.draw(rectangle);
+  window.draw(circle);
+  window.display();
+}
+
+void check_for_five_hundred(sf::RectangleShape rectangle)
+{
+  double x_position = rectangle.getPosition().x;
+  if (x_position == 500)
+  {
+    std::cout << "You just hit 500!\n";
+  }
+  else if (x_position == 1000)
+  {
     std::cout << "You just hit 1000!\n";
+  }
+}
+
+void move_rectangle(sf::RectangleShape &rectangle)
+{
+  rectangle.move(0.25, 0);
+}
+
+void move_circle(sf::CircleShape &circle)
+{
+  if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
+  {
+    circle.move(0.5, 0);
+  }
+  else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
+  {
+    circle.move(-0.5, 0);
+  }
 }
