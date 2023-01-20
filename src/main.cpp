@@ -1,4 +1,5 @@
 #include <SFML/Graphics.hpp>
+#include <SFML/Window/Keyboard.hpp>
 #include <iostream>
 #include "../include/main.h"
 
@@ -25,6 +26,15 @@ int main()
       {
         window.close();
       }
+    }
+
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
+    {
+      circle.move(0.5, 0);
+    }
+    else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
+    {
+      circle.move(-0.5, 0);
     }
 
     window.clear();
