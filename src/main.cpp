@@ -1,5 +1,5 @@
 #include <SFML/Graphics.hpp>
-#include <SFML/Window/Keyboard.hpp>
+#include <SFML/Window.hpp>
 #include <iostream>
 #include "../include/main.h"
 
@@ -15,6 +15,15 @@ int main()
   circle.setFillColor(sf::Color::Red);
   circle.setPosition(50, 1100);
 
+  sf::Texture crabTexture;
+  if (!crabTexture.loadFromFile("images/crab.png"))
+  {
+    std::cout << "Couldn't load crab image!\n";
+  }
+  sf::Sprite crabSprite;
+  crabSprite.setPosition(1000, 700);
+  crabSprite.setTexture(crabTexture);
+
   while (window.isOpen())
   {
     sf::Event event;
@@ -26,7 +35,11 @@ int main()
       }
     }
 
+    window.clear();
+    draw_crab(window, crabSprite);
     draw_shapes(window, rectangle, circle);
+    window.display();
+
     check_for_five_hundred(rectangle);
     move_rectangle(rectangle);
     move_circle(circle);
@@ -35,12 +48,15 @@ int main()
   return 0;
 }
 
+void draw_crab(sf::RenderWindow &window, sf::Sprite crabSprite)
+{
+  window.draw(crabSprite);
+}
+
 void draw_shapes(sf::RenderWindow &window, sf::RectangleShape rectangle, sf::CircleShape circle)
 {
-  window.clear();
   window.draw(rectangle);
   window.draw(circle);
-  window.display();
 }
 
 void check_for_five_hundred(sf::RectangleShape rectangle)
