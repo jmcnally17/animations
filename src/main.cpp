@@ -48,18 +48,18 @@ int main()
   return 0;
 }
 
-void drawCrab(sf::RenderWindow &window, sf::Sprite &rCrabSprite)
+void drawCrab(sf::RenderWindow &window, const sf::Sprite &rCrabSprite)
 {
   window.draw(rCrabSprite);
 }
 
-void drawShapes(sf::RenderWindow &window, sf::RectangleShape rectangle, sf::CircleShape circle)
+void drawShapes(sf::RenderWindow &window, const sf::RectangleShape rectangle, const sf::CircleShape circle)
 {
   window.draw(rectangle);
   window.draw(circle);
 }
 
-void checkForFiveHundred(sf::RectangleShape rectangle)
+void checkForFiveHundred(const sf::RectangleShape rectangle)
 {
   double xPosition = rectangle.getPosition().x;
   if (xPosition == 500)
