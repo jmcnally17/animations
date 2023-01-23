@@ -6,7 +6,7 @@ The [bin](https://github.com/jmcnally17/graphics/tree/main/bin) folder contains 
 
 ## Getting Started
 
-A couple of frameworks need to be set up first before compiling the code. So, if you haven't already, install Homebrew by entering
+A couple of frameworks need to be set up first before compiling the code. So, if you haven't already, install [Homebrew](https://brew.sh/) by entering
 
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -37,3 +37,27 @@ g++ src/*.cpp -I /opt/homebrew/Cellar/sfml/2.5.1_2/inlcude -o bin/graphics -L /o
 As of writing, the current SFML version from Homebrew is 2.5.1. You can check which version you have by using `brew info sfml`. This will also show you the correct path for the `-I` and `-L` options used in the compile command.
 
 Enter `./bin/graphics` into your terminal as mentioned earlier and a window should pop up with the necessary shapes drawn.
+
+## Testing
+
+Tests have been written with the [GoogleTest](http://google.github.io/googletest/) framework, which you can install via Homebrew using
+
+```
+brew install googletest
+```
+
+To run the tests enter
+
+```
+bin/tests
+```
+
+into your terminal while in the [main](https://github.com/jmcnally17/graphics) directory.
+
+If you want to compile the tests yourself, run
+
+```
+g++ tests/*.cpp src/functions.cpp -I /opt/homebrew/Cellar/googletest/1.13.0/include -I /opt/homebrew/Cellar/sfml/2.5.1_2/inlcude -o bin/tests -L /opt/homebrew/Cellar/googletest/1.13.0/lib -lgtest -lgtest_main -pthread -L /opt/homebrew/Cellar/sfml/2.5.1_2/lib -lsfml-graphics -lsfml-window -lsfml-system -std=c++20
+```
+
+You must have GoogleTest installed via Homebrew first.
