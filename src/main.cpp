@@ -36,48 +36,48 @@ int main()
     }
 
     window.clear();
-    draw_crab(window, crabSprite);
-    draw_shapes(window, rectangle, circle);
+    drawCrab(window, crabSprite);
+    drawShapes(window, rectangle, circle);
     window.display();
 
-    check_for_five_hundred(rectangle);
-    move_rectangle(rectangle);
-    move_circle(circle);
+    checkForFiveHundred(rectangle);
+    moveRectangle(rectangle);
+    moveCircle(circle);
   }
 
   return 0;
 }
 
-void draw_crab(sf::RenderWindow &window, sf::Sprite crabSprite)
+void drawCrab(sf::RenderWindow &window, sf::Sprite crabSprite)
 {
   window.draw(crabSprite);
 }
 
-void draw_shapes(sf::RenderWindow &window, sf::RectangleShape rectangle, sf::CircleShape circle)
+void drawShapes(sf::RenderWindow &window, sf::RectangleShape rectangle, sf::CircleShape circle)
 {
   window.draw(rectangle);
   window.draw(circle);
 }
 
-void check_for_five_hundred(sf::RectangleShape rectangle)
+void checkForFiveHundred(sf::RectangleShape rectangle)
 {
-  double x_position = rectangle.getPosition().x;
-  if (x_position == 500)
+  double xPosition = rectangle.getPosition().x;
+  if (xPosition == 500)
   {
     std::cout << "You just hit 500!\n";
   }
-  else if (x_position == 1000)
+  else if (xPosition == 1000)
   {
     std::cout << "You just hit 1000!\n";
   }
 }
 
-void move_rectangle(sf::RectangleShape &rectangle)
+void moveRectangle(sf::RectangleShape &rectangle)
 {
   rectangle.move(0.25, 0);
 }
 
-void move_circle(sf::CircleShape &circle)
+void moveCircle(sf::CircleShape &circle)
 {
   if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
   {
