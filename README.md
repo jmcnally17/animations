@@ -46,7 +46,7 @@ Tests have been written with the [GoogleTest](http://google.github.io/googletest
 brew install googletest
 ```
 
-To run the tests enter
+To run the tests, enter
 
 ```
 bin/tests
