@@ -1,11 +1,11 @@
 #include <SFML/Graphics.hpp>
 
-void drawShapes(sf::RenderWindow &window, sf::RectangleShape rectangle, sf::CircleShape);
+void drawCrab(sf::RenderWindow &rWindow, sf::Sprite &rCrabSprite);
 
-void drawCrab(sf::RenderWindow &window, sf::Sprite crabSprite);
+void drawShapes(sf::RenderWindow &rWindow, sf::RectangleShape rectangle, sf::CircleShape circle);
 
 void checkForFiveHundred(sf::RectangleShape rectangle);
 
-void moveRectangle(sf::RectangleShape &rectangle);
+void moveRectangle(sf::RectangleShape &rRectangle);
 
-void moveCircle(sf::CircleShape &circle);
+void moveCircle(sf::CircleShape &rCircle);

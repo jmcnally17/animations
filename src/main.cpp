@@ -48,9 +48,9 @@ int main()
   return 0;
 }
 
-void drawCrab(sf::RenderWindow &window, sf::Sprite crabSprite)
+void drawCrab(sf::RenderWindow &window, sf::Sprite &rCrabSprite)
 {
-  window.draw(crabSprite);
+  window.draw(rCrabSprite);
 }
 
 void drawShapes(sf::RenderWindow &window, sf::RectangleShape rectangle, sf::CircleShape circle)
@@ -72,19 +72,19 @@ void checkForFiveHundred(sf::RectangleShape rectangle)
   }
 }
 
-void moveRectangle(sf::RectangleShape &rectangle)
+void moveRectangle(sf::RectangleShape &rRectangle)
 {
-  rectangle.move(0.25, 0);
+  rRectangle.move(0.25, 0);
 }
 
-void moveCircle(sf::CircleShape &circle)
+void moveCircle(sf::CircleShape &rCircle)
 {
   if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
   {
-    circle.move(0.5, 0);
+    rCircle.move(0.5, 0);
   }
   else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
   {
-    circle.move(-0.5, 0);
+    rCircle.move(-0.5, 0);
   }
 }
