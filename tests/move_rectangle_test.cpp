@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include "../include/functions.h"
+#include "../include/functions.hpp"
 
 TEST(MoveRectangle, AddsQuarterToXPosition)
 {
