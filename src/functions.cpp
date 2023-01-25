@@ -7,7 +7,7 @@ void drawRectangle(sf::RenderWindow &window, const RectangleShapeWrapper &rRecta
   window.draw(rRectangleWrapper);
 }
 
-void moveRectangle(RectangleShapeWrapper &rRectangleWrapper)
+void moveRectangle(IRectangleShape &rRectangle)
 {
-  rRectangleWrapper.move(0.25, 0);
+  rRectangle.move(0.25, 0);
 }

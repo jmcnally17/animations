@@ -1,4 +1,3 @@
-#include <iostream>
 #include "../include/functions.hpp"
 
 int main()

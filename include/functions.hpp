@@ -3,4 +3,4 @@
 
 void drawRectangle(sf::RenderWindow &rWindow, const RectangleShapeWrapper &rRectangleWrapper);
 
-void moveRectangle(RectangleShapeWrapper &rRectangleWrapper);
+void moveRectangle(IRectangleShape &rRectangle);
