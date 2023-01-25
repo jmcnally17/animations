@@ -1,12 +1,13 @@
 #include <iostream>
 #include <SFML/Graphics.hpp>
+#include "../include/models/rectangleShapeWrapper.hpp"
 
-void drawRectangle(sf::RenderWindow &window, const sf::RectangleShape &rRectangle)
+void drawRectangle(sf::RenderWindow &window, const RectangleShapeWrapper &rRectangleWrapper)
 {
-  window.draw(rRectangle);
+  window.draw(rRectangleWrapper);
 }
 
-void moveRectangle(sf::RectangleShape &rRectangle)
+void moveRectangle(RectangleShapeWrapper &rRectangleWrapper)
 {
-  rRectangle.move(0.25, 0);
+  rRectangleWrapper.move(0.25, 0);
 }

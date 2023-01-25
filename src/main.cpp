@@ -6,6 +6,7 @@ int main()
   sf::RenderWindow window(sf::VideoMode(1536, 1344), "Rectangle");
 
   sf::RectangleShape rectangle(sf::Vector2f(100, 500));
+  RectangleShapeWrapper rectangleWrapper(rectangle);
 
   while (window.isOpen())
   {
@@ -19,10 +20,10 @@ int main()
     }
 
     window.clear();
-    drawRectangle(window, rectangle);
+    drawRectangle(window, rectangleWrapper);
     window.display();
 
-    moveRectangle(rectangle);
+    moveRectangle(rectangleWrapper);
   }
 
   return 0;
