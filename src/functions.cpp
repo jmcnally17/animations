@@ -1,5 +1,3 @@
-#include <iostream>
-#include <SFML/Graphics.hpp>
 #include "../include/models/rectangleShapeWrapper.hpp"
 
 void drawRectangle(sf::RenderWindow &window, const RectangleShapeWrapper &rRectangleWrapper)
