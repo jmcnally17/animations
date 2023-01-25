@@ -1,5 +1,5 @@
 #include <gmock/gmock.h>
-#include "../include/functions.hpp"
+#include "../include/animations.hpp"
 
 class MockRectangleShape : public IRectangleShape
 {

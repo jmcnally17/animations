@@ -1,4 +1,4 @@
-# C++ Graphics
+# C++ Animations
 
 This is a small project for learning how to draw shapes and make graphics animations in C++ using the [SFML](https://www.sfml-dev.org/) framework.
 
