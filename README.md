@@ -1,4 +1,4 @@
-# C++ Graphics
+# C++ Animations
 
 This is a small project for learning how to draw shapes and make graphics animations in C++ using the [SFML](https://www.sfml-dev.org/) framework.
 
@@ -31,7 +31,7 @@ and you should be all good to go.
 In order to run this code, it needs to be compiled into a useable file for your computer to run. This can be done with the following command in your terminal while in the [main](https://github.com/jmcnally17/graphics) directory:
 
 ```
-g++ src/*.cpp -I /opt/homebrew/Cellar/sfml/2.5.1_2/inlcude -o bin/graphics -L /opt/homebrew/Cellar/sfml/2.5.1_2/lib -lsfml-graphics -lsfml-window -lsfml-system
+g++ src/*.cpp -I /opt/homebrew/Cellar/sfml/2.5.1_2/inlcude -o bin/graphics -L /opt/homebrew/Cellar/sfml/2.5.1_2/lib -lsfml-graphics -lsfml-window -lsfml-system -std=c++20
 ```
 
 As of writing, the current SFML version from Homebrew is 2.5.1. You can check which version you have by using `brew info sfml`. This will also show you the correct path for the `-I` and `-L` options used in the compile command.
@@ -57,7 +57,7 @@ into your terminal while in the [main](https://github.com/jmcnally17/graphics) d
 If you want to compile the tests yourself, run
 
 ```
-g++ tests/*.cpp src/functions.cpp -I /opt/homebrew/Cellar/googletest/1.13.0/include -I /opt/homebrew/Cellar/sfml/2.5.1_2/inlcude -o bin/tests -L /opt/homebrew/Cellar/googletest/1.13.0/lib -lgtest -lgtest_main -pthread -L /opt/homebrew/Cellar/sfml/2.5.1_2/lib -lsfml-graphics -lsfml-window -lsfml-system -std=c++20
+g++ tests/*.cpp src/functions.cpp -I /opt/homebrew/Cellar/googletest/1.13.0/include -I /opt/homebrew/Cellar/sfml/2.5.1_2/inlcude -o bin/tests -L /opt/homebrew/Cellar/googletest/1.13.0/lib -lgtest -lgtest_main -lgmock -lgmock_main -pthread -L /opt/homebrew/Cellar/sfml/2.5.1_2/lib -lsfml-graphics -lsfml-window -lsfml-system -std=c++20
 ```
 
 You must have GoogleTest installed via Homebrew first.
