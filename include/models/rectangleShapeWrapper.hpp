@@ -1,5 +1,5 @@
 #include <SFML/Graphics.hpp>
-#include "iRectangleShape.hpp"
+#include "./iRectangleShape.hpp"
 
 class RectangleShapeWrapper : public IRectangleShape, public sf::RectangleShape
 {

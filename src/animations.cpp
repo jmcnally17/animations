@@ -2,7 +2,7 @@
 
 int main()
 {
-  sf::RenderWindow window(sf::VideoMode(1536, 1344), "Rectangle");
+  RenderWindowWrapper window(sf::VideoMode(1536, 1344), "Animations");
 
   sf::RectangleShape rectangle(sf::Vector2f(100, 500));
   RectangleShapeWrapper rectangleWrapper(rectangle);
@@ -20,10 +20,7 @@ int main()
       }
     }
 
-    window.clear();
     drawRectangle(window, rectangleWrapper);
-    window.display();
-
     moveRectangle(rectangleWrapper);
   }
 
