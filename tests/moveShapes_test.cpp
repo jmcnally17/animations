@@ -7,11 +7,11 @@ public:
   MOCK_METHOD(void, move, (float x, float y), (override));
 };
 
-TEST(moveRectangle, callsMoveOnRectangle)
+TEST(moveShapes, callsMoveOnRectangle)
 {
   MockRectangleShape rectangle;
 
   EXPECT_CALL(rectangle, move(0.25, 0))
       .Times(1);
-  moveRectangle(rectangle);
+  moveShapes(rectangle);
 }

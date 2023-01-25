@@ -25,7 +25,7 @@ int main()
     }
 
     drawShapes(window, rectangleWrapper, circle);
-    moveRectangle(rectangleWrapper);
+    moveShapes(rectangleWrapper);
   }
 
   return 0;

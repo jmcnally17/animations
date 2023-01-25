@@ -12,7 +12,7 @@ public:
   MOCK_METHOD(void, display, (), (override));
 };
 
-TEST(drawShapes, callsDrawOnTheWindowWithRectangleArgument)
+TEST(drawShapes, callsDrawOnTheWindowWithShapeArguments)
 {
   MockRenderWindow renderWindow;
   sf::RectangleShape rectangle;
