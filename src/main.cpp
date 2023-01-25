@@ -6,6 +6,8 @@ int main()
 
   sf::RectangleShape rectangle(sf::Vector2f(100, 500));
   RectangleShapeWrapper rectangleWrapper(rectangle);
+  rectangleWrapper.setFillColor(sf::Color::Green);
+  rectangleWrapper.setPosition(50, 50);
 
   while (window.isOpen())
   {
