@@ -57,7 +57,7 @@ into your terminal while in the [main](https://github.com/jmcnally17/graphics) d
 If you want to compile the tests yourself, run
 
 ```
-g++ tests/*.cpp src/functions.cpp -I /opt/homebrew/Cellar/googletest/1.13.0/include -I /opt/homebrew/Cellar/sfml/2.5.1_2/inlcude -o bin/tests -L /opt/homebrew/Cellar/googletest/1.13.0/lib -lgtest -lgtest_main -pthread -L /opt/homebrew/Cellar/sfml/2.5.1_2/lib -lsfml-graphics -lsfml-window -lsfml-system -std=c++20
+g++ tests/*.cpp src/functions.cpp -I /opt/homebrew/Cellar/googletest/1.13.0/include -I /opt/homebrew/Cellar/sfml/2.5.1_2/inlcude -o bin/tests -L /opt/homebrew/Cellar/googletest/1.13.0/lib -lgtest -lgtest_main -lgmock -lgmock_main -pthread -L /opt/homebrew/Cellar/sfml/2.5.1_2/lib -lsfml-graphics -lsfml-window -lsfml-system -std=c++20
 ```
 
 You must have GoogleTest installed via Homebrew first.
