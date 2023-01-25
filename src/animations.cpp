@@ -9,6 +9,10 @@ int main()
   rectangleWrapper.setFillColor(sf::Color::Green);
   rectangleWrapper.setPosition(50, 50);
 
+  sf::CircleShape circle(50);
+  circle.setFillColor(sf::Color::Red);
+  circle.setPosition(1400, 1200);
+
   while (window.isOpen())
   {
     sf::Event event;
@@ -20,7 +24,7 @@ int main()
       }
     }
 
-    drawShapes(window, rectangleWrapper);
+    drawShapes(window, rectangleWrapper, circle);
     moveRectangle(rectangleWrapper);
   }
 

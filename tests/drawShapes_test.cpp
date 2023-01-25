@@ -17,13 +17,14 @@ TEST(drawShapes, callsDrawOnTheWindowWithRectangleArgument)
   MockRenderWindow renderWindow;
   sf::RectangleShape rectangle;
   RectangleShapeWrapper rectangleWrapper(rectangle);
+  sf::CircleShape circle;
 
   EXPECT_CALL(renderWindow, clear())
       .Times(1);
   EXPECT_CALL(renderWindow, draw(testing::Truly([](const sf::Drawable &drawable)
                                                 { return true; })))
-      .Times(1);
+      .Times(2);
   EXPECT_CALL(renderWindow, display())
       .Times(1);
-  drawShapes(renderWindow, rectangleWrapper);
+  drawShapes(renderWindow, rectangleWrapper, circle);
 }

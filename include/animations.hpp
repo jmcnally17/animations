@@ -1,6 +1,6 @@
 #include "./models/renderWindowWrapper.hpp"
 #include "./models/rectangleShapeWrapper.hpp"
 
-void drawShapes(IRenderWindow &rWindow, const RectangleShapeWrapper &rRectangleWrapper);
+void drawShapes(IRenderWindow &rWindow, const RectangleShapeWrapper &rRectangleWrapper, const sf::CircleShape &rCircle);
 
 void moveRectangle(IRectangleShape &rRectangle);
