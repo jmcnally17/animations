@@ -12,7 +12,7 @@ public:
   MOCK_METHOD(void, display, (), (override));
 };
 
-TEST(drawRectangle, callsDrawOnTheWindowWithRectangleArgument)
+TEST(drawShapes, callsDrawOnTheWindowWithRectangleArgument)
 {
   MockRenderWindow renderWindow;
   sf::RectangleShape rectangle;
@@ -25,5 +25,5 @@ TEST(drawRectangle, callsDrawOnTheWindowWithRectangleArgument)
       .Times(1);
   EXPECT_CALL(renderWindow, display())
       .Times(1);
-  drawRectangle(renderWindow, rectangleWrapper);
+  drawShapes(renderWindow, rectangleWrapper);
 }

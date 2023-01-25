@@ -20,7 +20,7 @@ int main()
       }
     }
 
-    drawRectangle(window, rectangleWrapper);
+    drawShapes(window, rectangleWrapper);
     moveRectangle(rectangleWrapper);
   }
 
