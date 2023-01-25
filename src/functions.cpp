@@ -1,8 +1,11 @@
+#include "../include/models/renderWindowWrapper.hpp"
 #include "../include/models/rectangleShapeWrapper.hpp"
 
-void drawRectangle(sf::RenderWindow &rWindow, const RectangleShapeWrapper &rRectangleWrapper)
+void drawRectangle(IRenderWindow &rWindow, const RectangleShapeWrapper &rRectangleWrapper)
 {
+  rWindow.clear();
   rWindow.draw(rRectangleWrapper);
+  rWindow.display();
 }
 
 void moveRectangle(IRectangleShape &rRectangle)
