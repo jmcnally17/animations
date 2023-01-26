@@ -12,7 +12,14 @@ void drawShapes(IRenderWindow &rWindow, const sf::RectangleShape &rRectangle, co
 
 void moveCircle(ICircleShape &rCircle, const bool toTheRight)
 {
-  rCircle.move(0.5, 0);
+  if (toTheRight)
+  {
+    rCircle.move(0.5, 0);
+  }
+  else
+  {
+    rCircle.move(-0.5, 0);
+  }
 }
 
 void moveRectangle(IRectangleShape &rRectangle)
