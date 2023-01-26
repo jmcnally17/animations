@@ -10,8 +10,9 @@ int main()
   rectangleWrapper.setPosition(50, 50);
 
   sf::CircleShape circle(50);
-  circle.setFillColor(sf::Color::Red);
-  circle.setPosition(1400, 1200);
+  CircleShapeWrapper circleWrapper(circle);
+  circleWrapper.setFillColor(sf::Color::Red);
+  circleWrapper.setPosition(1400, 1200);
 
   while (window.isOpen())
   {
@@ -24,8 +25,16 @@ int main()
       }
     }
 
-    drawShapes(window, rectangleWrapper, circle);
+    drawShapes(window, rectangleWrapper, circleWrapper);
     moveRectangle(rectangleWrapper);
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
+    {
+      moveCircle(circleWrapper, true);
+    }
+    else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
+    {
+      moveCircle(circleWrapper, false);
+    }
   }
 
   return 0;
