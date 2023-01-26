@@ -13,5 +13,5 @@ TEST(moveShapes, callsMoveOnRectangle)
 
   EXPECT_CALL(rectangle, move(0.25, 0))
       .Times(1);
-  moveShapes(rectangle);
+  moveRectangle(rectangle);
 }

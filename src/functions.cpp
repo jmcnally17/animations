@@ -9,7 +9,7 @@ void drawShapes(IRenderWindow &rWindow, const RectangleShapeWrapper &rRectangleW
   rWindow.display();
 }
 
-void moveShapes(IRectangleShape &rRectangle)
+void moveRectangle(IRectangleShape &rRectangle)
 {
   rRectangle.move(0.25, 0);
 }

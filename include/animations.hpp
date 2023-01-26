@@ -3,4 +3,4 @@
 
 void drawShapes(IRenderWindow &rWindow, const RectangleShapeWrapper &rRectangleWrapper, const sf::CircleShape &rCircle);
 
-void moveShapes(IRectangleShape &rRectangle);
+void moveRectangle(IRectangleShape &rRectangle);
