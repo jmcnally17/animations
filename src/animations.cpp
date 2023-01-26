@@ -27,6 +27,14 @@ int main()
 
     drawShapes(window, rectangleWrapper, circleWrapper);
     moveRectangle(rectangleWrapper);
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
+    {
+      moveCircle(circleWrapper, true);
+    }
+    else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
+    {
+      moveCircle(circleWrapper, false);
+    }
   }
 
   return 0;
