@@ -1,5 +1,5 @@
 #include <gmock/gmock.h>
-#include "../include/animations.hpp"
+#include "../../include/animations.hpp"
 
 class MockRenderWindow : public IRenderWindow
 {
