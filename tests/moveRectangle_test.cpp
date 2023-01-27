@@ -7,7 +7,7 @@ public:
   MOCK_METHOD(void, move, (float x, float y), (override));
 };
 
-TEST(moveShapes, callsMoveOnRectangle)
+TEST(moveRectangle, callsMoveOnRectangle)
 {
   MockRectangleShape rectangle;
 

@@ -16,7 +16,6 @@ TEST(drawShapes, callsDrawOnTheWindowWithShapeArguments)
 {
   MockRenderWindow renderWindow;
   sf::RectangleShape rectangle;
-  RectangleShapeWrapper rectangleWrapper(rectangle);
   sf::CircleShape circle;
 
   EXPECT_CALL(renderWindow, clear())
@@ -26,5 +25,5 @@ TEST(drawShapes, callsDrawOnTheWindowWithShapeArguments)
       .Times(2);
   EXPECT_CALL(renderWindow, display())
       .Times(1);
-  drawShapes(renderWindow, rectangleWrapper, circle);
+  drawShapes(renderWindow, rectangle, circle);
 }
