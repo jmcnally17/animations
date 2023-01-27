@@ -1,11 +1,5 @@
-#include <gmock/gmock.h>
 #include "../include/animations.hpp"
-
-class MockCircleShape : public ICircleShape
-{
-public:
-  MOCK_METHOD(void, move, (float x, float y), (override));
-};
+#include "./mockModels/mockCircleShape.hpp"
 
 TEST(moveCircle, movesCircleRightWhenRightKeyPressed)
 {

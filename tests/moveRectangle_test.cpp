@@ -1,11 +1,5 @@
-#include <gmock/gmock.h>
 #include "../include/animations.hpp"
-
-class MockRectangleShape : public IRectangleShape
-{
-public:
-  MOCK_METHOD(void, move, (float x, float y), (override));
-};
+#include "./mockModels/mockRectangleShape.hpp"
 
 TEST(moveRectangle, callsMoveOnRectangle)
 {

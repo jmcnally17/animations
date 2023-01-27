@@ -1,16 +1,5 @@
-#include <gmock/gmock.h>
 #include "../../include/animations.hpp"
-
-class MockRenderWindow : public IRenderWindow
-{
-public:
-  MOCK_METHOD(bool, isOpen, (), (const, override));
-  MOCK_METHOD(bool, pollEvent, (sf::Event & event), (override));
-  MOCK_METHOD(void, close, (), (override));
-  MOCK_METHOD(void, clear, (), (override));
-  MOCK_METHOD(void, draw, (const sf::Drawable &drawable), (override));
-  MOCK_METHOD(void, display, (), (override));
-};
+#include "../mockModels/mockRenderWindow.hpp"
 
 TEST(drawShapes, callsDrawOnTheWindowWithShapeArguments)
 {
