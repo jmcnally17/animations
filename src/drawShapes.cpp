@@ -1,4 +1,4 @@
-#include "../include/models/renderWindowWrapper.hpp"
+#include "../include/models/iRenderWindow.hpp"
 
 void drawShapes(IRenderWindow &rWindow, const sf::RectangleShape &rRectangle, const sf::CircleShape &rCircle)
 {

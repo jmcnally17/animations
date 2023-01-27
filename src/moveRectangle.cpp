@@ -1,4 +1,4 @@
-#include "../include/models/rectangleShapeWrapper.hpp"
+#include "../include/models/iRectangleShape.hpp"
 
 void moveRectangle(IRectangleShape &rRectangle)
 {

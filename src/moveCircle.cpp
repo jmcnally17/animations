@@ -1,4 +1,4 @@
-#include "../include/models/circleShapeWrapper.hpp"
+#include "../include/models/iCircleShape.hpp"
 
 void moveCircle(ICircleShape &rCircle, const bool toTheRight)
 {
