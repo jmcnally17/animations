@@ -1,3 +1,6 @@
+#ifndef RENDER_WINDOW_WRAPPER_HPP
+#define RENDER_WINDOW_WRAPPER_HPP
+
 #include "./iRenderWindow.hpp"
 
 class RenderWindowWrapper : public IRenderWindow
@@ -14,3 +17,5 @@ public:
 private:
   sf::RenderWindow window_;
 };
+
+#endif

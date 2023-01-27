@@ -1,4 +1,7 @@
 #include "../include/animations.hpp"
+#include "../include/models/renderWindowWrapper.hpp"
+#include "../include/models/rectangleShapeWrapper.hpp"
+#include "../include/models/circleShapeWrapper.hpp"
 
 int main()
 {

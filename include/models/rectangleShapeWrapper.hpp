@@ -1,3 +1,6 @@
+#ifndef RECTANGLE_SHAPE_WRAPPER_HPP
+#define RECTANGLE_SHAPE_WRAPPER_HPP
+
 #include <SFML/Graphics.hpp>
 #include "./iRectangleShape.hpp"
 
@@ -7,3 +10,5 @@ public:
   RectangleShapeWrapper(sf::RectangleShape rectangle) : sf::RectangleShape::RectangleShape(rectangle) {}
   void move(float x, float y) override { sf::RectangleShape::move(x, y); }
 };
+
+#endif
