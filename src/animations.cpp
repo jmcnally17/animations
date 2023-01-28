@@ -40,7 +40,7 @@ int main()
     {
       moveCircle(circleWrapper, true);
     }
-    else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
     {
       moveCircle(circleWrapper, false);
     }
