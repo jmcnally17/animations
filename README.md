@@ -57,7 +57,7 @@ into your terminal while in the [main](https://github.com/jmcnally17/animations)
 If you want to compile the tests yourself, run
 
 ```
-g++ -o bin/tests $(find tests -name "*.cpp") src/drawShapes/*.cpp src/moveCircle.cpp src/moveRectangle.cpp -I /opt/homebrew/Cellar/googletest/1.13.0/include -I /opt/homebrew/Cellar/sfml/2.5.1_2/include -L /opt/homebrew/Cellar/googletest/1.13.0/lib -lgtest -lgtest_main -lgmock -lgmock_main -pthread -L /opt/homebrew/Cellar/sfml/2.5.1_2/lib -lsfml-graphics -lsfml-window -lsfml-system -std=c++20
+g++ -o bin/tests $(find tests -name "*.cpp") $(find src -name "*.cpp" ! -name "animations.cpp")  -I /opt/homebrew/Cellar/googletest/1.13.0/include -I /opt/homebrew/Cellar/sfml/2.5.1_2/include -L /opt/homebrew/Cellar/googletest/1.13.0/lib -lgtest -lgtest_main -lgmock -lgmock_main -pthread -L /opt/homebrew/Cellar/sfml/2.5.1_2/lib -lsfml-graphics -lsfml-window -lsfml-system -std=c++20
 ```
 
 You must have GoogleTest installed via Homebrew first.
