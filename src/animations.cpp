@@ -2,7 +2,6 @@
 #include "../include/models/renderWindowWrapper.hpp"
 #include "../include/models/rectangleShapeWrapper.hpp"
 #include "../include/models/circleShapeWrapper.hpp"
-#include <iostream>
 
 int main()
 {
@@ -19,10 +18,7 @@ int main()
   circleWrapper.setPosition(1400, 1200);
 
   sf::Texture crabTexture;
-  if (!crabTexture.loadFromFile("images/crab.png"))
-  {
-    std::cout << "Could not load crab image!\n";
-  }
+  crabTexture.loadFromFile("images/crab.png");
   sf::Sprite crabSprite;
   crabSprite.setPosition(800, 700);
   crabSprite.setTexture(crabTexture);
