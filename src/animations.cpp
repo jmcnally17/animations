@@ -2,6 +2,7 @@
 #include "../include/models/renderWindowWrapper.hpp"
 #include "../include/models/rectangleShapeWrapper.hpp"
 #include "../include/models/circleShapeWrapper.hpp"
+#include <SFML/Audio.hpp>
 
 int main()
 {
@@ -23,6 +24,11 @@ int main()
   crabSprite.setPosition(800, 700);
   crabSprite.setTexture(crabTexture);
 
+  sf::SoundBuffer buffer;
+  buffer.loadFromFile("public/audio/pacmanDeath.wav");
+  sf::Sound sound;
+  sound.setBuffer(buffer);
+
   while (window.isOpen())
   {
     sf::Event event;
@@ -43,6 +49,10 @@ int main()
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
     {
       moveCircle(circleWrapper, false);
+    }
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space))
+    {
+      sound.play();
     }
   }
 
