@@ -18,7 +18,7 @@ int main()
   circleWrapper.setPosition(1400, 1200);
 
   sf::Texture crabTexture;
-  crabTexture.loadFromFile("images/crab.png");
+  crabTexture.loadFromFile("public/images/crab.png");
   sf::Sprite crabSprite;
   crabSprite.setPosition(800, 700);
   crabSprite.setTexture(crabTexture);
