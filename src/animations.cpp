@@ -3,7 +3,6 @@
 #include "../include/models/rectangleShapeWrapper.hpp"
 #include "../include/models/circleShapeWrapper.hpp"
 #include "../include/models/soundWrapper.hpp"
-#include <SFML/Audio.hpp>
 
 int main()
 {
