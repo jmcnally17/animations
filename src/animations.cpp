@@ -2,6 +2,7 @@
 #include "../include/models/renderWindowWrapper.hpp"
 #include "../include/models/rectangleShapeWrapper.hpp"
 #include "../include/models/circleShapeWrapper.hpp"
+#include "../include/models/soundWrapper.hpp"
 #include <SFML/Audio.hpp>
 
 int main()
@@ -27,7 +28,8 @@ int main()
   sf::SoundBuffer buffer;
   buffer.loadFromFile("public/audio/pacmanDeath.wav");
   sf::Sound sound;
-  sound.setBuffer(buffer);
+  SoundWrapper soundWrapper(sound);
+  soundWrapper.setBuffer(buffer);
 
   while (window.isOpen())
   {
@@ -52,7 +54,7 @@ int main()
     }
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space))
     {
-      sound.play();
+      playSound(soundWrapper);
     }
   }
 
