@@ -6,12 +6,12 @@
 #include "./models/shapes/iCircleShape.hpp"
 #include "./models/audio/iSoundContainer.hpp"
 
-void drawObjects(IRenderWindow &rWindow, const sf::RectangleShape &rRectangle, const sf::CircleShape &rCircle, const sf::Sprite &rSprite);
+void drawObjects(IRenderWindow &window, const sf::RectangleShape &rectangle, const sf::CircleShape &circle, const sf::Sprite &sprite);
 
-void moveRectangle(IRectangleShape &rRectangle);
+void moveRectangle(IRectangleShape &rectangle);
 
-void moveCircle(ICircleShape &rCircle, const bool toTheRight);
+void moveCircle(ICircleShape &circle, const bool toTheRight);
 
-void playSound(ISoundContainer &rSoundContainer);
+void playSound(ISoundContainer &soundContainer);
 
 #endif

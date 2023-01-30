@@ -1,10 +1,10 @@
 #include "../include/models/window/iRenderWindow.hpp"
 
-void drawObjects(IRenderWindow &rWindow, const sf::RectangleShape &rRectangle, const sf::CircleShape &rCircle, const sf::Sprite &rSprite)
+void drawObjects(IRenderWindow &window, const sf::RectangleShape &rectangle, const sf::CircleShape &circle, const sf::Sprite &sprite)
 {
-  rWindow.clear();
-  rWindow.draw(rRectangle);
-  rWindow.draw(rCircle);
-  rWindow.draw(rSprite);
-  rWindow.display();
+  window.clear();
+  window.draw(rectangle);
+  window.draw(circle);
+  window.draw(sprite);
+  window.display();
 }

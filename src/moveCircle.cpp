@@ -1,13 +1,13 @@
 #include "../include/models/shapes/iCircleShape.hpp"
 
-void moveCircle(ICircleShape &rCircle, const bool toTheRight)
+void moveCircle(ICircleShape &circle, const bool toTheRight)
 {
   if (toTheRight)
   {
-    rCircle.move(0.5, 0);
+    circle.move(0.5, 0);
   }
   else
   {
-    rCircle.move(-0.5, 0);
+    circle.move(-0.5, 0);
   }
 }

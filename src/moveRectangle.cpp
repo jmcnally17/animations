@@ -1,6 +1,6 @@
 #include "../include/models/shapes/iRectangleShape.hpp"
 
-void moveRectangle(IRectangleShape &rRectangle)
+void moveRectangle(IRectangleShape &rectangle)
 {
-  rRectangle.move(0.25, 0);
+  rectangle.move(0.25, 0);
 }
