@@ -1,4 +1,4 @@
-#include "../include/models/iRenderWindow.hpp"
+#include "../include/models/window/iRenderWindow.hpp"
 
 void drawObjects(IRenderWindow &rWindow, const sf::RectangleShape &rRectangle, const sf::CircleShape &rCircle, const sf::Sprite &rSprite)
 {

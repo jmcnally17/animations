@@ -1,9 +1,9 @@
 #include "../include/animations.hpp"
-#include "../include/models/renderWindowWrapper.hpp"
-#include "../include/models/rectangleShapeWrapper.hpp"
-#include "../include/models/circleShapeWrapper.hpp"
-#include "../include/models/soundWrapper.hpp"
-#include "../include/models/soundContainer.hpp"
+#include "../include/models/window/renderWindowWrapper.hpp"
+#include "../include/models/shapes/rectangleShapeWrapper.hpp"
+#include "../include/models/shapes/circleShapeWrapper.hpp"
+#include "../include/models/audio/soundWrapper.hpp"
+#include "../include/models/audio/soundContainer.hpp"
 
 int main()
 {

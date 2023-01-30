@@ -2,7 +2,7 @@
 #define MOCK_SOUND_HPP
 
 #include <gmock/gmock.h>
-#include "../../include/models/iSound.hpp"
+#include "../../include/models/audio/iSound.hpp"
 
 class MockSound : public ISound
 {

@@ -2,7 +2,7 @@
 #define MOCK_RENDER_WINDOW_HPP
 
 #include <gmock/gmock.h>
-#include "../../include/models/iRenderWindow.hpp"
+#include "../../include/models/window/iRenderWindow.hpp"
 
 class MockRenderWindow : public IRenderWindow
 {

@@ -2,7 +2,7 @@
 #define MOCK_CIRCLE_SHAPE_HPP
 
 #include <gmock/gmock.h>
-#include "../../include/models/iCircleShape.hpp"
+#include "../../include/models/shapes/iCircleShape.hpp"
 
 class MockCircleShape : public ICircleShape
 {

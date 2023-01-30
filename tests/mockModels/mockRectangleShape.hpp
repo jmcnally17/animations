@@ -2,7 +2,7 @@
 #define MOCK_RECTANGLE_SHAPE_HPP
 
 #include <gmock/gmock.h>
-#include "../../include/models/iRectangleShape.hpp"
+#include "../../include/models/shapes/iRectangleShape.hpp"
 
 class MockRectangleShape : public IRectangleShape
 {
