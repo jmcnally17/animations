@@ -3,15 +3,16 @@
 
 #include <SFML/Audio.hpp>
 #include "./iSoundContainer.hpp"
+#include "./iSound.hpp"
 
 class SoundContainer : public ISoundContainer
 {
 public:
-  SoundContainer(sf::Sound &sound);
+  SoundContainer(ISound &sound);
   void play() override;
 
 private:
-  sf::Sound sound_;
+  ISound &sound_;
 };
 
 #endif
