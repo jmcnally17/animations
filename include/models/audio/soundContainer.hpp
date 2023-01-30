@@ -9,8 +9,8 @@ class SoundContainer : public ISoundContainer
   sf::Sound sound;
 
 public:
-  SoundContainer(sf::Sound &rSound) { sound = rSound; }
-  void play() override { sound.play(); }
+  SoundContainer(sf::Sound &rSound);
+  void play() override;
 };
 
 #endif
