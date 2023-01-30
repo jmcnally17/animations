@@ -4,7 +4,7 @@
 #include "./models/iRenderWindow.hpp"
 #include "./models/iRectangleShape.hpp"
 #include "./models/iCircleShape.hpp"
-#include "./models/iSound.hpp"
+#include "./models/iSoundContainer.hpp"
 
 void drawObjects(IRenderWindow &rWindow, const sf::RectangleShape &rRectangle, const sf::CircleShape &rCircle, const sf::Sprite &rSprite);
 
@@ -12,6 +12,6 @@ void moveRectangle(IRectangleShape &rRectangle);
 
 void moveCircle(ICircleShape &rCircle, const bool toTheRight);
 
-void playSound(ISound &rSound);
+void playSound(ISoundContainer &rSoundContainer);
 
 #endif

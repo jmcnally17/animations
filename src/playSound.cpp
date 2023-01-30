@@ -1,6 +1,6 @@
-#include "../include/models/iSound.hpp"
+#include "../include/models/iSoundContainer.hpp"
 
-void playSound(ISound &rSound)
+void playSound(ISoundContainer &rSoundContainer)
 {
-  rSound.play();
+  rSoundContainer.play();
 }

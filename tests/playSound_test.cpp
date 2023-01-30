@@ -1,11 +1,11 @@
 #include "../include/animations.hpp"
-#include "./mockModels/mockSound.hpp"
+#include "./mockModels/mockSoundContainer.hpp"
 
 TEST(playSound, callsPlayOnTheSoundArgument)
 {
-  MockSound mockSound;
+  MockSoundContainer MockSoundContainer;
 
-  EXPECT_CALL(mockSound, play())
+  EXPECT_CALL(MockSoundContainer, play())
       .Times(1);
-  playSound(mockSound);
+  playSound(MockSoundContainer);
 }
