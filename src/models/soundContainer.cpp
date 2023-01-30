@@ -1,8 +1,8 @@
 #include "../../include/models/audio/soundContainer.hpp"
 
-SoundContainer::SoundContainer(sf::Sound &rSound) { sound = rSound; }
+SoundContainer::SoundContainer(sf::Sound &rSound) { sound_ = rSound; }
 
 void SoundContainer::play()
 {
-  sound.play();
+  sound_.play();
 }
